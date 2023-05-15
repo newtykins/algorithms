@@ -2,7 +2,13 @@ mod search;
 mod sort;
 
 fn main() {
-    let a = vec![1,2,3,4,5,6];
+    let mut a = vec![1, 2, 5, 4, 2, 3];
+    sort::insertion_sort(&mut a, true);
 
-    println!("{:?} {:?}", search::binary_search(a.clone(), 6), search::linear_search(a, 5));
+    println!(
+        "{:?} {:?} {:?}",
+        a.clone(),
+        search::binary_search(&a, 5),
+        search::linear_search(&a, 2)
+    );
 }
