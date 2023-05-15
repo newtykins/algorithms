@@ -3,7 +3,7 @@ mod sort;
 
 fn main() {
     let mut a = vec![1, 2, 5, 4, 2, 3];
-    sort::insertion_sort(&mut a, true);
+    sort::quicksort(&mut a, false);
 
     println!(
         "{:?} {:?} {:?}",

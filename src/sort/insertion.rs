@@ -8,7 +8,7 @@ where
     let mut i = 1;
 
     while i < arr.len() {
-		let x = arr[i];
+        let x = arr[i];
         let mut j = i - 1;
 
         while j > 0 && arr[j] * multiplier > x * multiplier {
